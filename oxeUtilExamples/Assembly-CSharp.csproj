@@ -45,9 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scenes\projectile\projectileController.cs" />
-     <Compile Include="Assets\oxeUtil\Scripts\oxeDragger.cs" />
-     <Compile Include="Assets\oxeUtil\Scripts\oxeProjectileMath.cs" />
+     <Compile Include="Assets\Scenes\Floats\floatsController.cs" />
+     <Compile Include="Assets\Scenes\Linear Projectile\linearProjectileController.cs" />
+     <Compile Include="Assets\Scenes\Parabolic Projectile\mainController.cs" />
+     <Compile Include="Assets\oxeUtil\Scripts\Dynamics\oxeProjectileMath.cs" />
+     <Compile Include="Assets\oxeUtil\Scripts\UI\oxeDragger.cs" />
+     <Compile Include="Assets\oxeUtil\Scripts\UI\oxeValueSlider.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity_5.4.1/Unity_5.4.1.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

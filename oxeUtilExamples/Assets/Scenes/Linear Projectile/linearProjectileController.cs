@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class projectileController : MonoBehaviour {
+public class linearProjectileController : MonoBehaviour {
   public Transform     flyingTarget;
   public Transform     flyingProjectile;
   public Transform     markerTarget;
@@ -83,6 +83,6 @@ public class projectileController : MonoBehaviour {
     projectileSpeed = (markerProjectileSpeed.position - markerProjectile.position).magnitude;
     projectileVelocity = new Vector3(1, 1, 0) * projectileSpeed;
 
-    bool succ = oxeProjectileMath.linearCollisionCourse(markerTarget.position, targetVelocity, markerProjectile.position, projectileSpeed, out projectileVelocity);
+    oxeProjectileMath.linearCollisionCourse(markerTarget.position, targetVelocity, markerProjectile.position, projectileSpeed, out projectileVelocity);
   }
 }
