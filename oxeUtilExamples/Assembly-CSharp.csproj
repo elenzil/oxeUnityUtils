@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scenes\Floats\floatsController.cs" />
      <Compile Include="Assets\Scenes\Linear Projectile\linearProjectileController.cs" />
      <Compile Include="Assets\Scenes\Parabolic Projectile\mainController.cs" />
+     <Compile Include="Assets\Scripts\openThingButton.cs" />
      <Compile Include="Assets\oxeUtil\Scripts\Dynamics\oxeProjectileMath.cs" />
      <Compile Include="Assets\oxeUtil\Scripts\UI\oxeDragger.cs" />
      <Compile Include="Assets\oxeUtil\Scripts\UI\oxeValueSlider.cs" />

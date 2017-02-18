@@ -2,6 +2,11 @@
 using System.Collections;
 
 public class floatsController : MonoBehaviour {
+
+  void Start() {
+    floatTest();
+  }
+
   void floatTest() {
     float a = 1.5f;
     float b = 0.3f;
