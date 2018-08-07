@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class oxeDragger : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
+public class oxeDragger : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler {
 
   private Vector3 dPos;
   private Transform trans;
@@ -11,7 +11,7 @@ public class oxeDragger : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     trans = transform;
   }
 
-  public void OnBeginDrag(PointerEventData ped) {
+  public void OnPointerDown(PointerEventData ped) {
     Vector3 v = Camera.main.ScreenToWorldPoint(ped.position);
     dPos = trans.position - v;
   }
@@ -20,7 +20,7 @@ public class oxeDragger : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     updatePos(ped);
   }
 
-  public void OnEndDrag(PointerEventData ped) {
+  public void OnPointerUp(PointerEventData ped) {
     updatePos(ped);
   }
 
